@@ -3,7 +3,7 @@ An AI for the popular game Wumpus World that creates a graph and uses heuristics
 
 The Wumpus World is a cave consisting of rooms connected by passageways. Lurking somewhere in the cave is the terrible Wumpus, a beast that eats anyone who enters its room. The Wumpus can be shot by an agent, but the agent has only one arrow. Some rooms contain bottomless pits that will trap anyone who wanders into these rooms (except for the Wumpus, which is too big to fall in). The only mitigating feature of this bleak environment is the possibility of finding a heap of gold. A concrete definition of the game is given by this PEAS description:
 
-##Performance Measure
+## Performance Measure
 
 The performance measure of an agent is an integer score calculated based on the following:
 • Start at 0 points.
@@ -15,7 +15,7 @@ The performance measure of an agent is an integer score calculated based on the 
 The gaming ends either when the agent dies, when the agent climbs out of
 the cave, or when the agent’s score goes below -1000.
 
-##Environment
+## Environment
 The environment can be classified as partially observable, deterministic, sequential, static, discrete, and single agent.
 • An NxM grid of rooms, where 4<=N, M <=7.
 • The agent always starts in the bottom left square (1,1), facing to the right.
@@ -46,7 +46,7 @@ The environment can be classified as partially observable, deterministic, sequen
 
 
 
-##Sensors
+## Sensors
 - In the square containing the Wumpus and in the directly (not diagonally) adjacent squares, the agent will perceive a STENCH.
 - In the squares directly adjacent to a pit, the agent will perceive a BREEZE.
 - In the square where the gold is, the agent will perceive a GLITTER.
